@@ -9,12 +9,22 @@ public class ConceptRunner {
      */
     public static void main(String[] args) {
 
-        //Dynamic Programming
+        /**
+         * Dynamic Programming Calls
+         */
         DynamicProgramming dynamicProgramming = new DynamicProgramming();
         int fibNum;
 
         //recursive solution
         fibNum = dynamicProgramming.fibRecursive(5);
-        System.out.println("Fibonacci number of 5 using recursive strategy:"+fibNum);
+        System.out.println("Fibonacci number of [5] using recursive strategy: ["+fibNum+"]");
+
+        //memoize solution
+        fibNum= dynamicProgramming.fibMemoize(5);
+        System.out.println("Fibonacci number of [5] using memoize strategy: ["+fibNum+"]");
+
+        //memoize solution
+        fibNum= dynamicProgramming.fibTabulation(5);
+        System.out.println("Fibonacci number of [5] using tabulation strategy: ["+fibNum+"]");
     }
 }
