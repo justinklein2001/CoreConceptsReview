@@ -88,4 +88,19 @@ public class DynamicProgramming {
         return fib[n];
     }
 
+    public void callDynamicProgramming(){
+        int fibNum;
+        //recursive solution
+        fibNum = fibRecursive(5);
+        System.out.println("Fibonacci number of [5] using recursive strategy: ["+fibNum+"]");
+
+        //memoize solution
+        fibNum= fibMemoize(5);
+        System.out.println("Fibonacci number of [5] using memoize strategy: ["+fibNum+"]");
+
+        //memoize solution
+        fibNum= fibTabulation(5);
+        System.out.println("Fibonacci number of [5] using tabulation strategy: ["+fibNum+"]");
+    }
+
 }
