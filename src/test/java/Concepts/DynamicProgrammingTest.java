@@ -56,7 +56,7 @@ class DynamicProgrammingTest {
 
     }
 
-    public static void main(String[] args) {
+    public static void callTests() {
 
         DynamicProgrammingTest testRunner = new DynamicProgrammingTest();
         testRunner.recursiveFibTest();
