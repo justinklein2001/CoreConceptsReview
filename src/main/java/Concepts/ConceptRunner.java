@@ -4,7 +4,7 @@ public class ConceptRunner {
     /**
      * Program: ConceptRunner.java
      * Author: Justin Klein
-     * Last Updated: Janurary 16th 2022
+     * Last Updated: May 21st 2022
      * Description: Main driver class to run all concept classes via the CLI
      */
     public static void main(String[] args) {
@@ -14,5 +14,11 @@ public class ConceptRunner {
          */
         DynamicProgramming dynamicProgramming = new DynamicProgramming();
         dynamicProgramming.callDynamicProgramming();
+
+        /**
+         * Bit Manipulation Call
+         */
+        BitManipulation bitManipulation = new BitManipulation();
+        bitManipulation.callBitManipulation();
     }
 }
